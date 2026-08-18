@@ -1,0 +1,325 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Schilders & Onderhoudsbedrijf Van Buuren – professioneel binnen- en buitenschilderwerk, onderhoud en renovatie. Vraag vrijblijvend een offerte aan of WhatsApp direct.">
+  <meta name="theme-color" content="#111827">
+  <title>Schilders & Onderhoudsbedrijf Van Buuren</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --ink:#111827; --muted:#667085; --paper:#fbfaf7; --white:#fff;
+      --gold:#b79252; --gold2:#d4b878; --line:#e7e2d8; --green:#159447;
+      --shadow:0 20px 60px rgba(17,24,39,.10); --radius:22px;
+    }
+    *{box-sizing:border-box} html{scroll-behavior:smooth}
+    body{margin:0;color:var(--ink);background:var(--paper);font-family:"DM Sans",Arial,sans-serif;line-height:1.6}
+    a{color:inherit;text-decoration:none} img{display:block;max-width:100%}
+    .container{width:min(1180px,92%);margin:auto}
+    .topbar{background:var(--ink);color:#fff;font-size:13px}
+    .topbar .container{display:flex;justify-content:flex-end;gap:22px;padding:9px 0}
+    .nav{position:sticky;top:0;z-index:30;background:rgba(251,250,247,.94);backdrop-filter:blur(12px);border-bottom:1px solid rgba(231,226,216,.85)}
+    .nav-inner{height:82px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+    .brand{display:flex;align-items:center;gap:12px;font-weight:800;letter-spacing:.02em}
+    .brand img{width:58px;height:58px;object-fit:contain}
+    .brand span{font-size:16px;line-height:1.05}
+    .brand small{display:block;font-size:10px;letter-spacing:.15em;color:var(--muted);margin-top:5px}
+    .menu{display:flex;gap:28px;align-items:center;font-size:14px;font-weight:600}
+    .menu a:hover{color:#8d6b31}
+    .nav-cta{display:flex;gap:10px}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;border:0;border-radius:999px;padding:13px 19px;font-weight:700;cursor:pointer;transition:.2s}
+    .btn:hover{transform:translateY(-1px)}
+    .btn-dark{background:var(--ink);color:#fff}.btn-gold{background:var(--gold);color:#fff}.btn-wa{background:var(--green);color:#fff}
+    .hero{position:relative;min-height:700px;display:grid;align-items:center;overflow:hidden;background:#161a21}
+    .hero:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(12,17,25,.90),rgba(12,17,25,.48) 52%,rgba(12,17,25,.18)),url("images/buitenwerk-1.jpg") center/cover}
+    .hero-content{position:relative;color:#fff;padding:100px 0 120px;max-width:760px}
+    .eyebrow{display:inline-flex;gap:9px;align-items:center;color:var(--gold2);font-weight:700;text-transform:uppercase;letter-spacing:.18em;font-size:12px}
+    .eyebrow:before{content:"";width:32px;height:1px;background:currentColor}
+    h1,h2,h3{line-height:1.1;margin:0 0 18px}
+    h1{font-family:"Playfair Display",Georgia,serif;font-size:clamp(46px,7vw,82px);letter-spacing:-.04em}
+    h2{font-family:"Playfair Display",Georgia,serif;font-size:clamp(34px,5vw,54px);letter-spacing:-.03em}
+    h3{font-size:22px}
+    .hero p{font-size:19px;max-width:650px;color:#e8ebef;margin:0 0 30px}
+    .hero-actions{display:flex;flex-wrap:wrap;gap:12px}
+    .hero-note{margin-top:22px;color:#d4d8de;font-size:13px}
+    .stats{margin-top:-48px;position:relative;z-index:5}
+    .stats-grid{display:grid;grid-template-columns:repeat(3,1fr);background:#fff;border:1px solid var(--line);box-shadow:var(--shadow);border-radius:20px;overflow:hidden}
+    .stat{padding:26px 28px;text-align:center;border-right:1px solid var(--line)}
+    .stat:last-child{border-right:0}.stat strong{display:block;font-family:"Playfair Display";font-size:31px}.stat span{color:var(--muted);font-size:13px}
+    section{padding:100px 0}.section-head{max-width:720px;margin-bottom:48px}.section-head p{color:var(--muted);font-size:17px}
+    .about{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}
+    .about-image{border-radius:28px;overflow:hidden;box-shadow:var(--shadow);height:570px}.about-image img{width:100%;height:100%;object-fit:cover}
+    .kicker{color:#8d6b31;text-transform:uppercase;letter-spacing:.16em;font-weight:800;font-size:12px}
+    .checks{display:grid;gap:12px;margin:28px 0}.check{display:flex;gap:12px;align-items:flex-start}.check b{display:grid;place-items:center;flex:0 0 27px;width:27px;height:27px;border-radius:50%;background:#f0eadf;color:#8d6b31;font-size:13px}
+    .services{background:#f0ede7}.service-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .card{background:#fff;border:1px solid var(--line);border-radius:20px;padding:30px;box-shadow:0 10px 35px rgba(17,24,39,.05)}.card-photo{width:100%;height:210px;object-fit:cover;border-radius:14px;margin-bottom:20px}
+    .card .num{color:var(--gold);font-weight:800;font-size:13px;letter-spacing:.1em}.card p{color:var(--muted);margin-bottom:0}
+    .projects-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:16px}
+    .project{position:relative;overflow:hidden;border-radius:20px;min-height:300px;background:#ddd}.project img{width:100%;height:100%;object-fit:cover;transition:.45s}
+    .project:hover img{transform:scale(1.04)}.project:nth-child(1),.project:nth-child(4){grid-column:span 7}.project:nth-child(2),.project:nth-child(3),.project:nth-child(5),.project:nth-child(6){grid-column:span 5}
+    .project-label{position:absolute;left:16px;right:16px;bottom:16px;background:rgba(17,24,39,.84);color:#fff;border-radius:14px;padding:12px 15px;font-weight:700}
+    .before-after{display:grid;grid-template-columns:1fr 1fr;gap:20px}.ba-card{border-radius:22px;overflow:hidden;background:#fff;border:1px solid var(--line);box-shadow:var(--shadow)}.ba-card img{height:390px;width:100%;object-fit:cover}.ba-card div{padding:18px;font-weight:800}
+    .process{background:var(--ink);color:#fff}.process .section-head p{color:#aeb5bf}.process-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.step{border-top:1px solid #3d4653;padding-top:22px}.step span{color:var(--gold2);font-size:13px;font-weight:800}.step p{color:#b9c0c9}
+    .quote{background:linear-gradient(135deg,#f2eee5,#fff)}.quote-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:55px;align-items:start}
+    .contact-box{background:#fff;border:1px solid var(--line);border-radius:24px;padding:30px;box-shadow:var(--shadow)}
+    form{display:grid;grid-template-columns:1fr 1fr;gap:14px}.field{display:grid;gap:7px}.field.full{grid-column:1/-1}label{font-size:13px;font-weight:700}input,select,textarea{width:100%;padding:14px 15px;border:1px solid #d8d2c8;border-radius:12px;background:#fff;font:inherit;outline:none}input:focus,select:focus,textarea:focus{border-color:var(--gold)}textarea{min-height:130px;resize:vertical}
+    .contact-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:4px}
+    .faq{display:grid;gap:12px;max-width:850px}.faq details{background:#fff;border:1px solid var(--line);border-radius:15px;padding:18px 20px}.faq summary{font-weight:800;cursor:pointer}.faq p{color:var(--muted);margin:12px 0 0}
+    footer{background:#0d1117;color:#d9dee5;padding:55px 0 25px}.footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:40px}.footer-logo{filter:invert(1);width:190px;margin-bottom:14px}.footer h3{font-size:16px;color:#fff}.footer p,.footer a{color:#aeb5bf;font-size:14px}.footer-bottom{border-top:1px solid #252c35;margin-top:35px;padding-top:20px;font-size:12px;color:#7f8995;display:flex;justify-content:space-between;gap:15px}
+    .mobile-toggle{display:none}.floating{position:fixed;right:18px;bottom:18px;z-index:40;box-shadow:0 12px 30px rgba(0,0,0,.18)}
+    @media(max-width:900px){
+      .menu{display:none}.mobile-toggle{display:block;background:none;border:0;font-size:28px}.nav-cta{display:none}
+      .about,.quote-grid{grid-template-columns:1fr}.about-image{height:420px}.service-grid{grid-template-columns:1fr 1fr}.process-grid{grid-template-columns:1fr 1fr}
+      .footer-grid{grid-template-columns:1fr 1fr}.project:nth-child(n){grid-column:span 6}
+    }
+    @media(max-width:620px){
+      .topbar .container{justify-content:center}.nav-inner{height:72px}.brand img{width:48px;height:48px}
+      .hero{min-height:650px}.hero-content{padding:80px 0 100px}.hero p{font-size:17px}
+      .stats-grid{grid-template-columns:1fr}.stat{border-right:0;border-bottom:1px solid var(--line)}.stat:last-child{border-bottom:0}
+      section{padding:72px 0}.service-grid,.process-grid,.before-after{grid-template-columns:1fr}.project:nth-child(n){grid-column:1/-1;min-height:260px}
+      form{grid-template-columns:1fr}.field.full{grid-column:auto}.footer-grid{grid-template-columns:1fr}.footer-bottom{flex-direction:column}
+    }
+  </style>
+</head>
+<body>
+  <div class="topbar">
+    <div class="container">
+      <a href="tel:+31684758417">06 84 75 84 17</a>
+      <span>Vakmanschap • Onderhoud • Afwerking</span>
+    </div>
+  </div>
+
+  <nav class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="#home" aria-label="Van Buuren home">
+        <img src="images/logo.jpg" alt="Schilders & Onderhoudsbedrijf Van Buuren logo">
+        <span>VAN BUUREN<small>SCHILDERS & ONDERHOUDSBEDRIJF</small></span>
+      </a>
+      <div class="menu">
+        <a href="#over">Over ons</a><a href="#diensten">Diensten</a><a href="#projecten">Projecten</a><a href="#werkwijze">Werkwijze</a><a href="#contact">Contact</a>
+      </div>
+      <div class="nav-cta">
+        <a class="btn btn-wa" href="https://wa.me/31684758417?text=Hallo%20Van%20Buuren%2C%20ik%20wil%20graag%20informatie%20over%20schilderwerk." target="_blank" rel="noopener">WhatsApp</a>
+        <a class="btn btn-dark" href="#offerte">Offerte aanvragen</a>
+      </div>
+      <button class="mobile-toggle" onclick="document.querySelector('.menu').style.display = document.querySelector('.menu').style.display==='flex'?'none':'flex'" aria-label="Menu">☰</button>
+    </div>
+  </nav>
+
+  <main id="home">
+    <header class="hero">
+      <div class="container hero-content">
+        <div class="eyebrow">Schilders & onderhoudsbedrijf</div>
+        <h1>Vakmanschap dat je ziet. Kwaliteit die blijft.</h1>
+        <p>Professioneel schilderwerk en onderhoud voor woningen, bedrijfspanden en bijzondere projecten. Persoonlijk contact, nette uitvoering en oog voor detail.</p>
+        <div class="hero-actions">
+          <a class="btn btn-gold" href="mailto:onderhoudsbedrijfvanbuuren@gmail.com?subject=Offerteaanvraag%20Schilders%20%26%20Onderhoudsbedrijf%20Van%20Buuren">Aanvraag per e-mail</a>
+          <a class="btn btn-wa" href="https://wa.me/31684758417?text=Hallo%20Van%20Buuren%2C%20ik%20wil%20graag%20een%20offerte%20aanvragen." target="_blank" rel="noopener">WhatsApp</a>
+          <a class="btn" style="background:#fff;color:#111827" href="tel:+31684758417">Bel 06 84 75 84 17</a>
+        </div>
+        <div class="hero-note">Ook foto's van uw project sturen? Dat kan eenvoudig via WhatsApp.</div>
+      </div>
+    </header>
+
+    <div class="stats">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat"><strong>28+ jaar</strong><span>ervaring in de schildersbranche</span></div>
+          <div class="stat"><strong>Binnen & buiten</strong><span>schilderwerk en onderhoud</span></div>
+          <div class="stat"><strong>Persoonlijk</strong><span>één aanspreekpunt van begin tot eind</span></div>
+        </div>
+      </div>
+    </div>
+
+    <section id="over">
+      <div class="container about">
+        <div class="about-image"><img src="images/buitenwerk-2.jpg" alt="Professioneel buitenschilderwerk aan een woning" loading="lazy"></div>
+        <div>
+          <div class="kicker">Over Van Buuren</div>
+          <h2>Een verzorgd resultaat begint met goed vakwerk.</h2>
+          <p>Schilders & Onderhoudsbedrijf Van Buuren staat voor degelijk schilderwerk, zorgvuldig onderhoud en een professionele afwerking. Van kozijnen en deuren tot complete gevels en interieurs: iedere opdracht krijgt de aandacht die nodig is.</p>
+          <div class="checks">
+            <div class="check"><b>✓</b><div><strong>Zorgvuldige voorbereiding van het werk</strong><br><span style="color:var(--muted)">Afplakken, afdekken, reinigen, schuren, repareren en gronden voor een strak en duurzaam eindresultaat.</span></div></div>
+            <div class="check"><b>✓</b><div><strong>Netjes werken</strong><br><span style="color:var(--muted)">Zorgvuldig omgaan met uw woning, interieur en omgeving.</span></div></div>
+            <div class="check"><b>✓</b><div><strong>Particulier & zakelijk</strong><br><span style="color:var(--muted)">Van één ruimte tot grotere onderhouds- en schilderprojecten.</span></div></div>
+          </div>
+          <a class="btn btn-dark" href="#contact">Neem contact op</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="diensten" class="services">
+      <div class="container">
+        <div class="section-head">
+          <div class="kicker">Onze diensten</div>
+          <h2>Schilderwerk & onderhoud op niveau.</h2>
+          <p>Een complete aanpak voor binnen, buiten en onderhoud. We kijken niet alleen naar de kleur, maar vooral naar de ondergrond, voorbereiding en duurzaamheid van het resultaat.</p>
+        </div>
+        <div class="service-grid">
+          <article class="card"><div class="num">01 — BUITEN</div><h3>Buitenschilderwerk</h3><p>Professioneel schilderwerk voor kozijnen, deuren, gevels, boeidelen en ander buitenhoutwerk. Voor een duurzame bescherming en verzorgde uitstraling.</p></article>
+          <article class="card"><div class="num">02 — BINNEN</div><h3>Binnenschilderwerk</h3><p>Schilderwerk van wanden, plafonds, deuren, kozijnen, trappen en houtwerk. Strak uitgevoerd met aandacht voor een nette afwerking.</p></article>
+          <article class="card"><div class="num">03 — GLAS</div><h3>Glaszetten</h3><p>Vakkundig plaatsen en vervangen van glas in kozijnen en deuren, passend bij onderhouds- en renovatiewerkzaamheden.</p></article>
+          <article class="card"><div class="num">04 — WANDBEKLEDING</div><h3>Glasweefsel / glasvlies</h3><p>Aanbrengen en afwerken van glasweefsel en glasvlies voor sterke, strakke en duurzaam afgewerkte wanden.</p></article>
+          <article class="card"><div class="num">05 — BEHANG</div><h3>Behangen</h3><p>Zorgvuldig behangen van wanden met aandacht voor ondergrond, aansluitingen en een strak eindresultaat.</p></article>
+          <article class="card"><div class="num">06 — HERSTEL</div><h3>Houtrot</h3><p>Herstel van aangetast houtwerk als onderdeel van schilder- en onderhoudswerk, zodat kozijnen en andere houten onderdelen weer goed kunnen worden afgewerkt en beschermd.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="projecten">
+      <div class="container">
+        <div class="section-head">
+          <div class="kicker">Projecten</div>
+          <h2>Een selectie van uitgevoerd werk.</h2>
+          <p>Bekijk een aantal voorbeelden van binnen- en buitenschilderwerk, onderhoud en herstel.</p>
+        </div>
+        <div class="projects-grid">
+          <div class="project"><img src="images/buitenwerk-1.jpg" alt="Buitenschilderwerk woning" loading="lazy"><div class="project-label">Buitenschilderwerk woning</div></div>
+          <div class="project"><img src="images/buitenwerk-3.jpg" alt="Gevel- en kozijnwerk" loading="lazy"><div class="project-label">Gevel & kozijnen</div></div>
+          <div class="project"><img src="images/binnenwerk-1.jpg" alt="Binnenschilderwerk en wandafwerking" loading="lazy"><div class="project-label">Binnenschilderwerk</div></div>
+          <div class="project"><img src="images/kozijnen.jpg" alt="Kozijnen en houtwerk" loading="lazy"><div class="project-label">Kozijnen & houtwerk</div></div>
+          <div class="project"><img src="images/gevelwerk.jpg" alt="Professioneel gevelwerk" loading="lazy"><div class="project-label">Gevelwerk</div></div>
+          <div class="project"><img src="images/trap-voor.jpg" alt="Renovatie en schilderwerk aan trap en balustrade" loading="lazy"><div class="project-label">Trap & balustrade renovatie</div></div>
+          <div class="project"><img src="images/behangen.jpg" alt="Behangen wand met strak eindresultaat" loading="lazy"><div class="project-label">Behangen & wandafwerking</div></div>
+        </div>
+      </div>
+    </section>
+
+    <section style="padding-top:0">
+      <div class="container">
+        <div class="section-head">
+          <div class="kicker">Onderhoud</div>
+          <h2>Van verouderd naar verzorgd.</h2>
+          <p>Een goed voorbeeld van hoe zorgvuldig onderhoud de uitstraling van een pand kan terugbrengen.</p>
+        </div>
+        <div class="before-after">
+          <div class="ba-card"><img src="images/onderhoud-voor.jpg" alt="Onderhoudssituatie voor behandeling" loading="lazy"><div>Voor — achterstallige verflaag</div></div>
+          <div class="ba-card"><img src="images/onderhoud-na.jpg" alt="Resultaat na onderhoud en schilderwerk" loading="lazy"><div>Na — strak en opnieuw beschermd</div></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="werkwijze" class="process">
+      <div class="container">
+        <div class="section-head">
+          <div class="eyebrow">Onze werkwijze</div>
+          <h2>Van eerste contact tot nette oplevering.</h2>
+          <p>We houden het overzichtelijk: duidelijke afspraken, goede voorbereiding en een resultaat waar u met vertrouwen naar kunt kijken.</p>
+        </div>
+        <div class="process-grid">
+          <div class="step"><span>01</span><h3>Bespreken</h3><p>Vertel wat u wilt laten schilderen of onderhouden. Foto's via WhatsApp zijn welkom.</p></div>
+          <div class="step"><span>02</span><h3>Opname & offerte</h3><p>We bekijken de werkzaamheden en spreken de gewenste afwerking en planning door.</p></div>
+          <div class="step"><span>03</span><h3>Uitvoering</h3><p>De ondergrond wordt goed voorbereid en het schilderwerk wordt zorgvuldig uitgevoerd.</p></div>
+          <div class="step"><span>04</span><h3>Oplevering</h3><p>We lopen het werk samen na en zorgen dat alles netjes wordt achtergelaten.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="offerte" class="quote">
+      <div class="container quote-grid">
+        <div>
+          <div class="kicker">Offerte aanvragen</div>
+          <h2>Vertel wat u wilt laten doen.</h2>
+          <p>Stuur uw aanvraag bij voorkeur eerst per e-mail. Wilt u foto's van de klus meesturen of snel iets toelichten? Gebruik daarna eenvoudig WhatsApp.</p>
+          <div class="contact-actions">
+            <a class="btn btn-gold" href="mailto:onderhoudsbedrijfvanbuuren@gmail.com?subject=Offerteaanvraag%20Schilders%20%26%20Onderhoudsbedrijf%20Van%20Buuren">1. Aanvraag per e-mail</a>
+            <a class="btn btn-wa" href="https://wa.me/31684758417?text=Hallo%20Van%20Buuren%2C%20ik%20heb%20zojuist%20een%20aanvraag%20per%20e-mail%20gestuurd." target="_blank" rel="noopener">WhatsApp</a>
+            <a class="btn btn-dark" href="tel:+31684758417">Bel direct</a>
+          </div>
+        </div>
+        <div class="contact-box">
+          <form id="quoteForm">
+            <div class="field"><label for="naam">Naam *</label><input id="naam" required placeholder="Uw naam"></div>
+            <div class="field"><label for="telefoon">Telefoonnummer *</label><input id="telefoon" required placeholder="06..."></div>
+            <div class="field"><label for="email">E-mailadres</label><input id="email" type="email" placeholder="naam@email.nl"></div>
+            <div class="field"><label for="dienst">Gewenste dienst</label><select id="dienst"><option>Binnenschilderwerk</option><option>Buitenschilderwerk</option><option>Kozijnen & deuren</option><option>Gevelwerk</option><option>Onderhoud & herstel</option><option>Anders</option></select></div>
+            <div class="field full"><label for="bericht">Omschrijving van de klus *</label><textarea id="bericht" required placeholder="Bijvoorbeeld: buitenschilderwerk van kozijnen en deuren..."></textarea></div>
+            <div class="field full"><label for="plaats">Plaats van de klus</label><input id="plaats" placeholder="Plaats"></div>
+            <div class="field full"><button class="btn btn-gold" type="submit">Aanvraag per e-mail versturen</button></div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section id="werkgebied" style="padding-top:0">
+      <div class="container">
+        <div class="section-head">
+          <div class="kicker">Werkgebied</div>
+          <h2>Werkzaam in de regio Haaglanden & Westland.</h2>
+          <p>Schilders & Onderhoudsbedrijf Van Buuren is werkzaam in Den Haag, Wassenaar, Leidschendam, Voorburg, Rijswijk, Westland en Zoetermeer.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <div class="section-head">
+          <div class="kicker">Contact</div>
+          <h2>Direct contact met Van Buuren.</h2>
+          <p>Heeft u een vraag, wilt u advies of wilt u een offerte aanvragen? Bel of stuur een WhatsApp.</p>
+        </div>
+        <div class="contact-box" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px">
+          <div><div class="kicker">Telefoon</div><h3><a href="tel:+31684758417">06 84 75 84 17</a></h3><p style="color:var(--muted)">Direct telefonisch bereikbaar.</p></div>
+          <div><div class="kicker">WhatsApp</div><h3><a href="https://wa.me/31684758417" target="_blank" rel="noopener">Stuur een bericht</a></h3><p style="color:var(--muted)">Ook foto's van uw klus welkom.</p></div>
+          <div><div class="kicker">E-mail</div><h3 style="font-size:17px"><a href="mailto:onderhoudsbedrijfvanbuuren@gmail.com">onderhoudsbedrijfvanbuuren@gmail.com</a></h3><p style="color:var(--muted)">Stuur uw aanvraag ook per e-mail.</p></div>
+          <div><div class="kicker">KvK</div><h3>709525</h3><p style="color:var(--muted)">Kamer van Koophandel.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section style="padding-top:0">
+      <div class="container">
+        <div class="section-head"><div class="kicker">Veelgestelde vragen</div><h2>Veelgestelde vragen.</h2></div>
+        <div class="faq">
+          <details><summary>Kan ik foto's van de klus via WhatsApp sturen?</summary><p>Ja. Dat is juist handig voor een eerste indruk. Stuur enkele duidelijke foto's en vertel kort wat u wilt laten doen.</p></details>
+          <details><summary>Werkt Van Buuren voor particulieren én bedrijven?</summary><p>Ja. Zowel particuliere woningen als zakelijke en grotere onderhoudsprojecten kunnen worden besproken.</p></details>
+          <details><summary>Kan ik eerst vrijblijvend overleggen?</summary><p>Ja. Bel of stuur een WhatsApp met uw vraag. Daarna kunnen we bepalen wat de beste vervolgstap is.</p></details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <img class="footer-logo" src="images/logo.jpg" alt="Van Buuren logo">
+        <p>Schilders & Onderhoudsbedrijf Van Buuren. Professioneel schilderwerk, onderhoud en een verzorgde afwerking.</p>
+      </div>
+      <div><h3>Snel naar</h3><p><a href="#over">Over ons</a></p><p><a href="#diensten">Diensten</a></p><p><a href="#projecten">Projecten</a></p><p><a href="#offerte">Offerte aanvragen</a></p></div>
+      <div><h3>Contact</h3><p><a href="tel:+31684758417">06 84 75 84 17</a></p><p><a href="mailto:onderhoudsbedrijfvanbuuren@gmail.com">onderhoudsbedrijfvanbuuren@gmail.com</a></p><p><a href="https://wa.me/31684758417" target="_blank" rel="noopener">WhatsApp</a></p><p>KvK: 709525</p></div>
+    </div>
+    <div class="container footer-bottom"><span>© <span id="year"></span> Schilders & Onderhoudsbedrijf Van Buuren</span><span>Vakmanschap met aandacht voor detail.</span></div>
+  </footer>
+
+  <a class="btn btn-wa floating" href="https://wa.me/31684758417?text=Hallo%20Van%20Buuren%2C%20ik%20heb%20een%20vraag." target="_blank" rel="noopener" aria-label="WhatsApp Van Buuren">WhatsApp</a>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    document.getElementById('quoteForm').addEventListener('submit', function(e){
+      e.preventDefault();
+      const naam = document.getElementById('naam').value.trim();
+      const tel = document.getElementById('telefoon').value.trim();
+      const emailKlant = document.getElementById('email').value.trim();
+      const dienst = document.getElementById('dienst').value;
+      const bericht = document.getElementById('bericht').value.trim();
+      const plaats = document.getElementById('plaats').value.trim();
+      const subject = encodeURIComponent('Offerteaanvraag - ' + naam);
+      const body = encodeURIComponent(
+        'Beste Schilders & Onderhoudsbedrijf Van Buuren,\n\n' +
+        'Ik wil graag een offerte aanvragen.\n\n' +
+        'Naam: ' + naam + '\n' +
+        'Telefoon: ' + tel + '\n' +
+        'E-mail: ' + (emailKlant || '-') + '\n' +
+        'Dienst: ' + dienst + '\n' +
+        'Plaats: ' + (plaats || '-') + '\n\n' +
+        'Omschrijving:\n' + bericht + '\n\n' +
+        'Met vriendelijke groet,\n' + naam
+      );
+      window.location.href = 'mailto:onderhoudsbedrijfvanbuuren@gmail.com?subject=' + subject + '&body=' + body;
+    });
+  </script>
+</body>
+</html>
